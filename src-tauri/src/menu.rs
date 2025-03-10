@@ -1,4 +1,4 @@
-use tauri::{AboutMetadata, CustomMenuItem, Menu, MenuItem, Submenu};
+use tauri::{CustomMenuItem, Menu, MenuItem, Submenu};
 pub fn os_default(#[allow(unused)] app_name: &str) -> Menu {
     let mut menu = Menu::new();
     let settings = CustomMenuItem::new("settings", "Settings").accelerator("CmdOrCtrl+,");

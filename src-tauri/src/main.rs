@@ -3,7 +3,6 @@
 use serde::{Deserialize, Serialize};
 use std::fs::metadata;
 use std::time::SystemTime;
-use tauri::{Manager, Window};
 use tauri_plugin_context_menu;
 mod menu;
 
