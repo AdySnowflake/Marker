@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - pnpm install
+      - pnpm approve-builds
+      - npx update-browserslist-db@latest
+      - cd src-tauri && cargo update
+      - cd src-tauri && cargo fix --allow-dirty
+      - npx tauri build
+    desc: "Build the Tauri application"
